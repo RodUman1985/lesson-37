@@ -79,5 +79,38 @@ console.log(`my name is ${name}. I am ${age} years old.`);
 // 
 const a1 = undefined;
 const a2=null;
-const a3=Inf;//+Inf ,-Inf
-
+const a3=Infinity;//+Inf ,-Inf
+const a4=NaN;// Not a Number (не число)
+let b=100;
+// false: null, undefined,NaN,0,'',"",
+//``
+if(b){console.log('wtf?')};
+b=0
+if(b){console.log('wtf?1')};
+b='';
+if(b){console.log('wtf?2')};
+b=Infinity;
+if(b){console.log('wtf?3')};
+b=[];
+if(b){console.log('wtf?4')};
+b={};
+if(b){console.log('wtf?5')};
+console.log('10'==10);
+//== -  сравнивает только значения без сравнения типа
+// != - аналогично выше
+//=== - сравнивает и значение и тип
+//!== - аналогично выше
+console.log('10'===10);
+// диалоговые окна
+alert ('text for user');
+// yes/no
+const answer = confirm('предавал ли Магнус?');
+console.log(answer);
+// просьба о вводе информации
+const answer2= prompt('youre favorit primarh?','Korax');
+console.log(answer2);
+// преобразование строки в число
+const t1= parseInt('1222');
+console.log(t1);
+const t2= parseFloat('1222.2');
+console.log(t2);
